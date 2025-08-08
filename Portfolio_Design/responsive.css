@@ -1,0 +1,116 @@
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 768px) {
+    #navbar .open-nav{
+        display: block;
+        cursor: pointer;
+    }
+    #navbar ul .close-nav{
+        display: block;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 1rem;
+        left:2rem;
+        cursor: pointer;
+    }
+    #navbar ul .close-nav::after,
+    #navbar ul .close-nav::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+        width: 90%;
+        height: 4px;
+        background-color: white;
+    }
+    #navbar ul .close-nav::before{
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+  #navbar ul {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100dvh;
+    flex-direction: column;
+    background: teal;
+    z-index: 1000;
+    padding-top: 4rem;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  #navbar ul li{
+    width: 100%;
+  }
+  #navbar ul li a {
+    color: white;
+  }
+  #navbar ul li:hover a {
+    transform: scale(1.1);
+    color: white;
+  }
+  #navbar ul li a::after,
+  #navbar ul li a::before {
+    display: none;
+  }
+  section {
+    padding: 0 1rem;
+  }
+  #Home {
+    flex-direction: column-reverse;
+    padding: 2rem 1rem;
+  }
+  #Home .left {
+    text-align: center;
+  }
+  #Home .left button {
+    margin: 0 auto;
+  }
+  .frontend .skill,
+  .backend .skill,
+  .tools .skill {
+    width: 80%;
+  }
+  #About p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  section {
+    padding: 0 14px;
+  }
+  #Skills .frontend,
+  #Skills .backend,
+  #Skills .tools {
+    gap: 1.7rem;
+  }
+  .frontend .skill,
+  .backend .skill,
+  .tools .skill {
+    flex-direction: column;
+    width: 95%;
+  }
+  .frontend .skill .label,
+  .backend .skill .label,
+  .tools .skill .label {
+    flex-direction: row;
+    align-items: center;
+    flex: 3;
+  }
+  .frontend .skill .label span,
+  .backend .skill .label span,
+  .tools .skill .label span {
+    font-size: 16px;
+  }
+  .frontend .skill .bar,
+  .backend .skill .bar,
+  .tools .skill .bar {
+    width: 100%;
+    flex: 1;
+  }
+  #About p {
+    width: 100%;
+  }
+}
