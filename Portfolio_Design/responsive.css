@@ -2,33 +2,33 @@
 }
 
 @media screen and (max-width: 768px) {
-    #navbar .open-nav{
-        display: block;
-        cursor: pointer;
-    }
-    #navbar ul .close-nav{
-        display: block;
-        height: 40px;
-        width: 40px;
-        position: absolute;
-        top: 1rem;
-        left:2rem;
-        cursor: pointer;
-    }
-    #navbar ul .close-nav::after,
-    #navbar ul .close-nav::before{
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) rotate(45deg);
-        width: 90%;
-        height: 4px;
-        background-color: white;
-    }
-    #navbar ul .close-nav::before{
-        transform: translate(-50%,-50%) rotate(-45deg);
-    }
+  #navbar .open-nav {
+    display: block;
+    cursor: pointer;
+  }
+  #navbar ul .close-nav {
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    cursor: pointer;
+  }
+  #navbar ul .close-nav::after,
+  #navbar ul .close-nav::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 90%;
+    height: 4px;
+    background-color: white;
+  }
+  #navbar ul .close-nav::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
   #navbar ul {
     position: fixed;
     top: 0;
@@ -41,7 +41,7 @@
     padding-top: 4rem;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-  #navbar ul li{
+  #navbar ul li {
     width: 100%;
   }
   #navbar ul li a {
@@ -72,6 +72,13 @@
   .backend .skill,
   .tools .skill {
     width: 80%;
+  }
+  .project-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .project-wrapper .img-wrapper{
+    width: max(280px,90%);
   }
   #About p {
     width: 80%;

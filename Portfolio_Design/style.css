@@ -295,8 +295,8 @@ gap: 0.25rem;
 }
 .project-wrapper .img-wrapper{
   position: relative;
-  height: 250px;
   width: 350px;
+  aspect-ratio: 7/5;
 }
 .project-wrapper .img-wrapper p{
    position: absolute; 
