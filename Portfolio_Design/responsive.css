@@ -2,6 +2,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  #navbar{
+    padding: 0 2rem;
+  }
   #navbar .open-nav {
     display: block;
     cursor: pointer;
@@ -12,7 +15,7 @@
     width: 40px;
     position: absolute;
     top: 1rem;
-    left: 2rem;
+    right: 2rem;
     cursor: pointer;
   }
   #navbar ul .close-nav::after,
@@ -85,6 +88,12 @@
   }
 }
 @media screen and (max-width: 480px) {
+  #navbar{
+    padding: 0 0.5rem;
+  }
+  #navbar ul .close-nav{
+    right: 0.5rem;
+  }
   section {
     padding: 0 14px;
   }

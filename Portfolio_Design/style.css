@@ -345,6 +345,61 @@ gap: 0.25rem;
 }
 
 /* Contact section */
+#Contact{
+  position: relative;
+  height: 100dvh;
+  width: 100%;
+  background: linear-gradient(45deg,rgb(0, 63, 63),teal);
+}
+#Contact h1{
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.contact-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  padding: 1rem 2rem;
+  width: clamp(300px,35%,520px);
+}
+.contact-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form form input{
+  border: 1px solid rgba(0,0,0,0.3);
+  height: 35px;
+  padding: 0.4rem 0.8rem;
+  color: var(--primary);
+  outline: none;
+}
+.contact-form form textarea{
+  padding: 1rem;
+  color: var(--primary);
+  outline: none;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+.contact-form form button{
+  background-color: var(--primary);
+  outline: none;
+  border: none;
+  color: white;
+  height: 40px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+#Contact > p{
+  position: absolute;
+  left: 0;
+  bottom: 0.8rem;
+  text-align: center;
+  color: white;
+  width: 100%;
+  font-size: 1.2rem;
+}
 
 /* Go On Top Button */
 #topBtn {
